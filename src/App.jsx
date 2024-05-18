@@ -1,12 +1,15 @@
 
 import './App.css'
 import ResponsiveAppBar from "./component/AppBar/appBar.jsx";
+import {Button} from "./component/Button/Button.jsx";
 
 function App() {
 
   return (
    <div>
-     <ResponsiveAppBar />
+    {/* <ResponsiveAppBar />*/}
+       <Button/>
+       <Button/>
    </div>
   )
 }
