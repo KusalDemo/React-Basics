@@ -1,5 +1,7 @@
+import './style.css'
+
 export function Button(){
     return(
-        <button>Click Me</button>
+        <button className="myButton">Click Me</button>
     )
 }
