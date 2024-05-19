@@ -1,7 +1,7 @@
 
 import './App.css'
 import ResponsiveAppBar from "./component/AppBar/appBar.jsx";
-import {Button} from "./component/Button/Button.jsx";
+import {Button, Button2} from "./component/Button/Button.jsx";
 
 function App() {
 
@@ -10,6 +10,8 @@ function App() {
     {/* <ResponsiveAppBar />*/}
        <Button/>
        <Button/>
+       <Button2 name="Hello"/>
+       <Button2 name="React"/>
    </div>
   )
 }

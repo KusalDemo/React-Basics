@@ -5,3 +5,9 @@ export function Button(){
         <button className="myButton">Click Me</button>
     )
 }
+export function Button2(props){
+    let {name} = props;
+    return(
+        <button className="myButton">{name}</button>
+    )
+}
