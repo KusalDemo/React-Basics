@@ -13,7 +13,7 @@ function App() {
        <Button2 name="Hello"/>
        <Button2 name="React"/>
        <Button3 name="Click" bgColor="red"/>
-
+       <Button3 name="Click" bgColor="purple"/>
    </div>
   )
 }
