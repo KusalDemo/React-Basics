@@ -18,3 +18,9 @@ export function Button3(props){
         <button className="myButton" style={{backgroundColor:bgColor}}>{name}</button>
     )
 }
+
+export function Button4({text,onClick}){
+    return(
+        <button className="myButton" onClick={onClick()}>{text}</button>
+    )
+}
