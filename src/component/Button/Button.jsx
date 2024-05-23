@@ -19,8 +19,14 @@ export function Button3(props){
     )
 }
 
-export function Button4({text,onClick}){
+/*export function Button4({text,onClick}){
     return(
         <button className="myButton" onClick={onClick()}>{text}</button>
+    )
+}*/
+
+export function Button5({text,onClick}){
+    return(
+        <button className="myButton" onClick={onClick}>{text}</button>
     )
 }

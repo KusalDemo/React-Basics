@@ -1,7 +1,7 @@
 
 import './App.css'
 import ResponsiveAppBar from "./component/AppBar/appBar.jsx";
-import {Button, Button2, Button3, Button4} from "./component/Button/Button.jsx";
+import {Button, Button2, Button3, Button4, Button5} from "./component/Button/Button.jsx";
 
 function App() {
 
@@ -14,7 +14,8 @@ function App() {
        <Button2 name="React"/>
        <Button3 name="Click" bgColor="red"/>
        <Button3 name="Click" bgColor="purple"/>
-       <Button4 text="onClick" onClick={() => alert("Hello")}/>
+       {/*<Button4 text="onClick()" onClick={() => alert("Hello")}/>*/}
+       <Button5 text="OnClick" onClick={()=>alert("Hello")}/>
    </div>
   )
 }
