@@ -30,3 +30,9 @@ export function Button5({text,onClick}){
         <button className="myButton" onClick={onClick}>{text}</button>
     )
 }
+
+export function Button6({text,onClick}){
+    return(
+        <button className="myButton" onClick={()=>onClick()}>{text}</button>
+    )
+}
