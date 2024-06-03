@@ -19,6 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import AboutPage from "../About/aboutPage.jsx";
+import ContactPage from "../Contact/contactPage.jsx";
 
 const drawerWidth = 240;
 
@@ -139,7 +140,8 @@ export default function PersistentDrawerLeft() {
             </Drawer>
             <Main open={open}>
                 <DrawerHeader/>
-                <AboutPage/>
+                <ContactPage/>
+
             </Main>
         </Box>
     );
