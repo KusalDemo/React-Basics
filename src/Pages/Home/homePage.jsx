@@ -20,6 +20,8 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import AboutPage from "../About/aboutPage.jsx";
 import ContactPage from "../Contact/contactPage.jsx";
+import {Route} from "@mui/icons-material";
+import {Link, Routes} from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -119,28 +121,35 @@ export default function PersistentDrawerLeft() {
                 </DrawerHeader>
                 <Divider/>
                 <List>
-                    <ListItem key={'about'} disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <InboxIcon/>
-                            </ListItemIcon>
-                            <ListItemText primary={'about'}/>
-                        </ListItemButton>
-                    </ListItem>
-                    <ListItem key={'contact'} disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <InboxIcon/>
-                            </ListItemIcon>
-                            <ListItemText primary={'contact'}/>
-                        </ListItemButton>
-                    </ListItem>
+                    <Link to={'/about'} style={{textDecoration: 'none'}}>
+                        <ListItem key={'about'} disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <InboxIcon/>
+                                </ListItemIcon>
+                                <ListItemText primary={'about'}/>
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
+                    <Link to={'/contact'} style={{textDecoration: 'none'}}>
+                        <ListItem key={'contact'} disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <InboxIcon/>
+                                </ListItemIcon>
+                                <ListItemText primary={'contact'}/>
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
                 </List>
                 <Divider/>
             </Drawer>
             <Main open={open}>
                 <DrawerHeader/>
-                <ContactPage/>
+                <Routes>
+                    <Route path={'/about'} element={<AboutPage/>}></Route>
+                    <Route path={'/contact'} element={<ContactPage/>}></Route>
+                </Routes>
 
             </Main>
         </Box>
