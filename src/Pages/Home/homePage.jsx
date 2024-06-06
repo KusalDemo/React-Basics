@@ -17,11 +17,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import AboutPage from "../About/aboutPage.jsx";
 import ContactPage from "../Contact/contactPage.jsx";
-import {Route} from "@mui/icons-material";
-import {Link, Routes} from "react-router-dom";
+import {Link, Navigate, Route, Routes} from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -147,6 +145,7 @@ export default function PersistentDrawerLeft() {
             <Main open={open}>
                 <DrawerHeader/>
                 <Routes>
+                    <Route path={'*'} element={<Navigate to={'/about'}/>}></Route>
                     <Route path={'/about'} element={<AboutPage/>}></Route>
                     <Route path={'/contact'} element={<ContactPage/>}></Route>
                 </Routes>
