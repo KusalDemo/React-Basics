@@ -149,7 +149,6 @@ export default function PersistentDrawerLeft() {
                     <Route path={'/about'} element={<AboutPage/>}></Route>
                     <Route path={'/contact'} element={<ContactPage/>}></Route>
                 </Routes>
-
             </Main>
         </Box>
     );
